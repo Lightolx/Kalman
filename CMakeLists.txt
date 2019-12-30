@@ -13,3 +13,6 @@ target_link_libraries(Kalman ${GLOG_LIBRARY})
 
 add_executable(WO WO.cpp)
 target_link_libraries(WO ${GLOG_LIBRARY})
+
+add_executable(CanNovatel CanNovatel.cpp KalmanFilter.cpp KalmanFilter.h)
+target_link_libraries(CanNovatel ${GLOG_LIBRARY})
