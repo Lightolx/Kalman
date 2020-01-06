@@ -8,6 +8,7 @@ using std::cout;
 using std::endl;
 
 int main() {
+    /*
     int n = 3;  // Number of states,        (x, y, theta),      car在平面上，所以只有3自由度
     int m = 3;  // Number of measurements   (x, y, theta),      mapmatching可以直接给出对这3个量的测量
     int l = 3;  // Number of controls       (dx, dy, dtheta),   轮速计可以给出对线速度及角速度的测量
@@ -101,4 +102,5 @@ int main() {
     fout_pre.close();
     fout_gt.close();
     fout_measure.close();
+     */
 }

@@ -11,8 +11,11 @@ include_directories(${Glog_INCLUDE_DIRS})
 add_executable(Kalman Simulate.cpp KalmanFilter.cpp KalmanFilter.h)
 target_link_libraries(Kalman ${GLOG_LIBRARY})
 
-add_executable(WO WO.cpp)
+add_executable(WO WO.cpp Common.cpp Common.h)
 target_link_libraries(WO ${GLOG_LIBRARY})
 
-add_executable(CanNovatel CanNovatel.cpp KalmanFilter.cpp KalmanFilter.h)
+add_executable(CanNovatel CanNovatel.cpp KalmanFilter.cpp KalmanFilter.h Common.cpp Common.h timer.cpp timer.h)
 target_link_libraries(CanNovatel ${GLOG_LIBRARY})
+
+add_executable(IMU_CAN IMU_CAN.cpp Common.cpp Common.h timer.cpp timer.h)
+target_link_libraries(IMU_CAN ${GLOG_LIBRARY})
